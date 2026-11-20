@@ -1,0 +1,399 @@
+{
+ "maj": "2026-11-20T21:06:04+01:00",
+ "chaine": "draanek_tv",
+ "prefixe": "!FE_",
+ "badges_actifs": true,
+ "personnages": [
+  {
+   "nom": "Alexandra",
+   "portrait": "portraits/alexandra.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Anatolia",
+   "portrait": "portraits/anatolia.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Aswan",
+   "portrait": "portraits/aswan.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Aurora",
+   "portrait": "portraits/aurora.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Benditz",
+   "portrait": "portraits/benditz.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Bertrand",
+   "portrait": "portraits/bertrand.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Bonaventure",
+   "portrait": "portraits/bonaventure.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Buccar",
+   "portrait": "portraits/buccar.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Cai",
+   "portrait": "portraits/cai.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Catania",
+   "portrait": "portraits/catania.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Centurio",
+   "portrait": "portraits/centurio.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Creek",
+   "portrait": "portraits/creek.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Dadao",
+   "portrait": "portraits/dadao.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Dante",
+   "portrait": "portraits/dante.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Diego",
+   "portrait": "portraits/diego.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Dietrich",
+   "portrait": "portraits/dietrich.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Esmeralda",
+   "portrait": "portraits/esmeralda.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Fabio",
+   "portrait": "portraits/fabio.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Fianna",
+   "portrait": "portraits/fianna.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Gaitz",
+   "portrait": "portraits/gaitz.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Goliath",
+   "portrait": "portraits/goliath.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Guzran",
+   "portrait": "portraits/guzran.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Halvin",
+   "portrait": "portraits/halvin.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Hong Hua",
+   "portrait": "portraits/honghua.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Inyoni",
+   "portrait": "portraits/inyoni.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Io",
+   "portrait": "portraits/io.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Jasmine",
+   "portrait": "portraits/jasmine.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Jester",
+   "portrait": "portraits/jester.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Jurah",
+   "portrait": "portraits/jurah.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Kiroc",
+   "portrait": "portraits/kiroc.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Klapka",
+   "portrait": "portraits/klapka.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Leda",
+   "portrait": "portraits/leda.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Lilian",
+   "portrait": "portraits/lilian.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Loretta",
+   "portrait": "portraits/loretta.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Ludia",
+   "portrait": "portraits/ludia.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Lysander",
+   "portrait": "portraits/lysander.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Majide",
+   "portrait": "portraits/majide.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Mikaela",
+   "portrait": "portraits/mikaela.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Mu",
+   "portrait": "portraits/mu.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Nathan",
+   "portrait": "portraits/nathan.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Nezha",
+   "portrait": "portraits/nezha.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Ninae",
+   "portrait": "portraits/ninae.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Noctula",
+   "portrait": "portraits/noctula.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Nuzzuo",
+   "portrait": "portraits/nuzzuo.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Nydine",
+   "portrait": "portraits/nydine.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Olympia",
+   "portrait": "portraits/olympia.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Orchel",
+   "portrait": "portraits/orchel.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Peppe",
+   "portrait": "portraits/peppe.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Peter",
+   "portrait": "portraits/peter.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Seteth",
+   "portrait": "portraits/seteth.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Sha Lan",
+   "portrait": "portraits/shalan.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Simon",
+   "portrait": "portraits/simon.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Sirocco",
+   "portrait": "portraits/sirocco.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Smyrnos",
+   "portrait": "portraits/smyrnos.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Sofia",
+   "portrait": "portraits/sofia.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Tahonia",
+   "portrait": "portraits/tahonia.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Talimun",
+   "portrait": "portraits/talimun.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Theodora",
+   "portrait": "portraits/theodora.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Tialla",
+   "portrait": "portraits/tialla.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Tobias",
+   "portrait": "portraits/tobias.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Troy",
+   "portrait": "portraits/troy.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Ultand",
+   "portrait": "portraits/ultand.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Ursula",
+   "portrait": "portraits/ursula.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Yang Jie",
+   "portrait": "portraits/yangjie.webp",
+   "statut": "absent",
+   "viewer": null
+  },
+  {
+   "nom": "Zarcone",
+   "portrait": "portraits/zarcone.webp",
+   "statut": "absent",
+   "viewer": null
+  }
+ ],
+ "viewers": {}
+}
