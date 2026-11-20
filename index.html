@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Choisis ton Perso – Fire Emblem: Fortune's Weave</title>
+<meta name="description" content="Incarne un personnage de Fire Emblem: Fortune's Weave sur le stream de Draanek_TV (mort définitive).">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Cinzel:wght@700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bleu: #2e7bff;
+    --violet: #6a3fe0;
+    --noir: #0a0a0a;
+    --fond: #0d0b14;
+    --carte: #18131f;
+    --texte: #f0e6d7;
+    --doux: #a89cb0;
+    --or: #f2c14e;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background:
+      radial-gradient(1100px 500px at 15% -10%, rgba(46, 123, 255, .18), transparent 60%),
+      radial-gradient(900px 500px at 100% 0%, rgba(106, 63, 224, .16), transparent 60%),
+      var(--fond);
+    color: var(--texte);
+    font-family: "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
+    line-height: 1.5;
+  }
+  .page { max-width: 1180px; margin: 0 auto; padding: 32px 20px 60px; }
+
+  /* ---------- En-tête ---------- */
+  header { margin-bottom: 30px; }
+  h1 {
+    display: inline-block;
+    margin: 0;
+    padding: 10px 34px 12px 26px;
+    font: 700 clamp(30px, 6vw, 54px)/1.1 "Cinzel", Georgia, serif;
+    color: #fff;
+    background: var(--noir);
+    clip-path: polygon(0 0, 100% 0, calc(100% - 22px) 100%, 22px 100%);
+    filter: drop-shadow(9px 7px 0 var(--bleu));
+  }
+  .etiquette {
+    display: inline-block;
+    max-width: calc(100% - 16px);
+    margin: 14px 0 0 10px;
+    padding: 2px 14px;
+    font: 400 clamp(15px, 2.4vw, 20px)/1.4 "Anton", Impact, sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--noir);
+    background: #fff;
+    border: 2px solid var(--noir);
+    box-shadow: 5px 4px 0 var(--violet);
+    transform: skewX(-12deg);
+  }
+  .intro { margin: 18px 0 0; max-width: 760px; font-size: 18px; }
+  .intro strong { color: #fff; }
+  .slogan { margin: 34px 0 0; text-align: center; }
+  .slogan p {
+    display: inline-block; margin: 0;
+    padding: 8px 30px 10px;
+    font: 700 clamp(22px, 4vw, 34px)/1.25 "Cinzel", Georgia, serif;
+    color: #fff;
+    background: var(--noir);
+    clip-path: polygon(0 0, 100% 0, calc(100% - 16px) 100%, 16px 100%);
+    filter: drop-shadow(7px 6px 0 var(--violet));
+  }
+  .slogan sup { font-size: .6em; color: var(--bleu); }
+  .asterisque { margin: 14px auto 0; max-width: 620px; font-size: 13px; font-style: italic; color: var(--doux); }
+
+  /* ---------- Démonstration animée ---------- */
+  .demo {
+    margin: 0 0 40px;
+    padding: 26px 20px 22px;
+    background: rgba(10, 10, 10, .45);
+    border: 1px solid rgba(255, 255, 255, .06);
+  }
+  .demo-persos { display: grid; grid-template-columns: repeat(4, minmax(0, 150px)); gap: 18px; justify-content: center; }
+  .demo .perso { transition: transform .35s ease; }
+  .demo .perso.vise { transform: translateY(-8px) scale(1.06); }
+  .demo .perso.vise .cadre { outline: 3px solid #fff; outline-offset: -3px; }
+  .demo .statut .pastille { opacity: 0; transform: skewX(-10deg) scale(.6); transition: opacity .3s, transform .3s; }
+  .demo .perso.a-toi .statut .pastille { opacity: 1; transform: skewX(-10deg) scale(1); }
+  .demo .perso.tombe img { filter: grayscale(1) brightness(.5); transition: filter .5s; }
+  .demo .perso .cadre::after {
+    content: ""; position: absolute; inset: 4%;
+    background: url("croix.svg") center / contain no-repeat;
+    filter: drop-shadow(2px 3px 0 rgba(0, 0, 0, .6));
+    opacity: 0; transform: scale(1.9) rotate(-8deg); transition: opacity .3s, transform .3s cubic-bezier(.3, 1.6, .5, 1);
+  }
+  .demo .perso.tombe .cadre::after { opacity: 1; transform: scale(1) rotate(0); }
+  .demo .perso.tombe { animation: secousse .45s; }
+  @keyframes secousse {
+    0%, 100% { translate: 0 0; } 20% { translate: -6px 2px; } 40% { translate: 6px -2px; }
+    60% { translate: -4px 1px; } 80% { translate: 3px 0; }
+  }
+  .bulle {
+    display: flex; align-items: center; gap: 10px;
+    width: fit-content; max-width: 100%; min-height: 46px;
+    margin: 24px auto 0; padding: 10px 26px 12px 20px;
+    background: var(--noir);
+    clip-path: polygon(0 0, 100% 6px, calc(100% - 10px) 100%, 10px calc(100% - 6px));
+    filter: drop-shadow(6px 4px 0 var(--bleu));
+    font-size: 17px;
+  }
+  .bulle .qui {
+    padding: 0 10px; font: 400 17px/1.5 "Anton", Impact, sans-serif; letter-spacing: 1px;
+    color: var(--noir); background: var(--bleu); transform: skewX(-12deg);
+  }
+  .bulle .tape { font-family: Consolas, "Cascadia Mono", monospace; color: #fff; min-width: 15ch; }
+  .bulle .tape::after { content: "▌"; color: var(--bleu); animation: clignote 1s steps(1) infinite; }
+  @keyframes clignote { 50% { opacity: 0; } }
+  .legende {
+    margin: 18px 0 0; text-align: center;
+    font: 400 clamp(18px, 3vw, 24px)/1.3 "Anton", Impact, sans-serif; letter-spacing: 1px; text-transform: uppercase;
+  }
+  .legende .n { color: var(--bleu); margin-right: 8px; }
+  .legende em { font-style: normal; color: #fff; background: var(--violet); padding: 0 8px; }
+
+  /* ---------- Guide ---------- */
+  h2 {
+    margin: 0 0 16px;
+    font: 400 26px/1.2 "Anton", Impact, sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .guide { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; margin-bottom: 22px; }
+  .etape {
+    position: relative;
+    padding: 20px 20px 18px 66px;
+    background: var(--carte);
+    border-left: 3px solid var(--bleu);
+    box-shadow: 6px 5px 0 rgba(46, 123, 255, .35);
+  }
+  .etape:nth-child(even) { border-left-color: var(--violet); box-shadow: 6px 5px 0 rgba(106, 63, 224, .4); }
+  .etape .num {
+    position: absolute; left: 14px; top: 16px;
+    width: 38px; height: 38px;
+    display: grid; place-items: center;
+    font: 400 22px "Anton", Impact, sans-serif;
+    color: #fff; background: var(--noir);
+    transform: skewX(-10deg);
+  }
+  .etape h3 { margin: 0 0 4px; font-size: 17px; }
+  .etape p { margin: 0; color: var(--doux); font-size: 15px; }
+  .cmd {
+    font-family: Consolas, "Cascadia Mono", monospace;
+    font-size: .95em;
+    color: #fff;
+    background: rgba(46, 123, 255, .18);
+    border: 1px solid rgba(46, 123, 255, .45);
+    padding: 1px 6px;
+    border-radius: 3px;
+    white-space: nowrap;
+  }
+  .commandes {
+    display: flex; flex-wrap: wrap; gap: 10px 22px; align-items: center;
+    padding: 14px 18px; margin-bottom: 40px;
+    background: rgba(10, 10, 10, .55);
+    border: 1px solid rgba(255, 255, 255, .07);
+    font-size: 15px; color: var(--doux);
+  }
+  .commandes b { color: var(--texte); font-weight: 600; }
+
+  /* ---------- Barre de filtres ---------- */
+  .barre { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-bottom: 20px; }
+  .compteurs { flex: 1 1 100%; color: var(--doux); font-size: 15px; margin-bottom: 4px; }
+  .compteurs b { color: var(--texte); font-size: 18px; }
+  .filtres { display: flex; flex-wrap: wrap; gap: 8px; }
+  .filtres button {
+    padding: 7px 16px;
+    font: 400 15px "Anton", Impact, sans-serif; letter-spacing: .8px; text-transform: uppercase;
+    color: var(--doux); background: var(--carte);
+    border: 1px solid rgba(255, 255, 255, .1);
+    cursor: pointer; transform: skewX(-8deg);
+  }
+  .filtres button[aria-pressed="true"] { color: #fff; background: var(--bleu); border-color: var(--bleu); }
+  .filtres button[data-filtre="tous"][aria-pressed="true"] { background: var(--violet); border-color: var(--violet); }
+  .recherche {
+    flex: 1 1 220px; max-width: 320px; margin-left: auto;
+    padding: 9px 14px; font-size: 15px;
+    color: var(--texte); background: var(--carte);
+    border: 1px solid rgba(255, 255, 255, .12); outline: none;
+  }
+  .recherche:focus { border-color: var(--bleu); }
+
+  /* ---------- Cartes des personnages ---------- */
+  .grille { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 22px 16px; }
+  .perso { text-align: center; }
+  .vignette { position: relative; aspect-ratio: 1; }
+  .cadre {
+    position: absolute; inset: 0;
+    background: #18121c;
+    clip-path: polygon(6% 0, 100% 4.5%, 94% 100%, 0 95.5%);
+  }
+  .ombre {
+    position: absolute; inset: 0;
+    transform: translate(6px, 5px);
+    background: var(--bleu);
+    clip-path: polygon(6% 4.5%, 100% 0, 94% 95.5%, 0 100%);
+  }
+  .perso:nth-child(even) .ombre { background: var(--violet); }
+  .cadre img { display: block; width: 100%; height: 100%; object-fit: cover; }
+  .nom { margin-top: 10px; font: 700 17px/1.2 "Cinzel", Georgia, serif; }
+  .statut { margin-top: 5px; font-size: 13px; min-height: 22px; }
+  .pastille {
+    display: inline-block; padding: 1px 9px;
+    font: 400 13px/1.5 "Anton", Impact, sans-serif; letter-spacing: .6px; text-transform: uppercase;
+    transform: skewX(-10deg);
+  }
+  .libre .pastille { color: #1a1206; background: var(--or); box-shadow: 0 0 10px rgba(242, 193, 78, .5); }
+  .incarne .pastille, .a-toi .pastille { color: #fff; background: var(--violet); }
+  .mort .pastille { color: #fff; background: #5c1420; }
+  .absent .pastille { color: var(--doux); border: 1px dashed rgba(255, 255, 255, .25); }
+  .absent img { filter: brightness(.6) saturate(.6); }
+  .grille .mort img { filter: grayscale(1) brightness(.6); }
+  .grille .mort .cadre::after {
+    content: ""; position: absolute; inset: 4%;
+    background: url("croix.svg") center / contain no-repeat;
+    filter: drop-shadow(2px 3px 0 rgba(0, 0, 0, .6));
+  }
+  /* Persos libres mis en avant : ombre dorée qui luit doucement + reflet qui balaie la carte */
+  .grille .perso.libre .ombre { background: var(--or); animation: lueur 2.4s ease-in-out infinite; }
+  @keyframes lueur {
+    0%, 100% { filter: brightness(.9); }
+    50% { filter: brightness(1.15) drop-shadow(0 0 8px rgba(242, 193, 78, .85)); }
+  }
+  .grille .perso.libre .cadre::after {
+    content: ""; position: absolute; inset: 0; pointer-events: none;
+    background: linear-gradient(115deg, transparent 32%, rgba(255, 230, 160, .35) 45%,
+                rgba(255, 250, 225, .75) 50%, rgba(255, 230, 160, .35) 55%, transparent 68%);
+    transform: translateX(-130%);
+    animation: reflet 3.6s ease-in-out infinite;
+  }
+  .grille .perso.libre:nth-child(3n+2) .cadre::after { animation-delay: 1.2s; }
+  .grille .perso.libre:nth-child(3n) .cadre::after { animation-delay: 2.4s; }
+  @keyframes reflet {
+    0%, 60% { transform: translateX(-130%); }
+    90%, 100% { transform: translateX(130%); }
+  }
+  .grille .libre { cursor: pointer; }
+  .grille .libre:hover .cadre, .grille .libre:focus-visible .cadre { outline: 2px solid #fff; outline-offset: -2px; }
+  .grille .libre:focus-visible { outline: none; }
+  .vide { grid-column: 1 / -1; padding: 40px 20px; text-align: center; color: var(--doux); font-size: 16px; }
+
+  footer { margin-top: 50px; color: var(--doux); font-size: 13px; text-align: center; }
+
+  .toast {
+    position: fixed; left: 50%; bottom: 28px; z-index: 10;
+    padding: 12px 22px;
+    font-size: 15px; color: #fff;
+    background: var(--noir); border-left: 4px solid var(--bleu);
+    box-shadow: 6px 5px 0 var(--violet);
+    transform: translate(-50%, 120px); opacity: 0;
+    transition: transform .25s ease, opacity .25s ease;
+  }
+  .toast.visible { transform: translate(-50%, 0); opacity: 1; }
+
+  @media (max-width: 560px) {
+    .page { padding: 22px 14px 40px; }
+    .grille { grid-template-columns: repeat(auto-fill, minmax(104px, 1fr)); gap: 16px 12px; }
+    .demo-persos { gap: 10px; }
+    .nom { font-size: 14px; }
+    .recherche { max-width: none; margin-left: 0; }
+    .etape { padding-left: 60px; }
+    .bulle { font-size: 15px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .demo *, .demo *::after, .grille *, .grille *::after { transition: none !important; animation: none !important; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <h1>Choisis ton Perso</h1><br>
+    <span class="etiquette">Fire Emblem : Fortune's Weave · mort définitive</span>
+    <p class="intro">Sur mon stream, chaque <strong>Draaminou</strong> peut <strong>Incarner</strong> un personnage
+      de FE. Je joue avec la <strong>mort Définitive</strong>, donc ça rajoute de la tension !</p>
+    <div class="slogan">
+      <p>Choisis judicieusement ton perso<sup>*</sup></p>
+      <div class="asterisque">* Draanek ne peut pas être tenu responsable en cas de missplay.
+        Draanek est un peu naze... parfois.</div>
+    </div>
+  </header>
+
+  <!-- Démonstration animée du principe -->
+  <section class="demo" aria-label="Le principe en animation">
+    <div class="demo-persos" id="demo-persos"></div>
+    <div class="bulle" aria-hidden="true"><span class="qui">@Toi</span><span class="tape" id="demo-tape"></span></div>
+    <p class="legende" id="demo-legende" aria-live="off"></p>
+  </section>
+
+  <section aria-labelledby="titre-guide">
+    <h2 id="titre-guide">Comment ça marche ?</h2>
+    <div class="guide">
+      <div class="etape"><span class="num">1</span>
+        <h3>Choisis un personnage libre</h3>
+        <p>Onglet <b>Libre</b> plus bas (les persos dorés). <b>Clique sur un personnage</b> : la commande est copiée,
+          il ne reste qu'à la coller dans le tchat.</p></div>
+      <div class="etape"><span class="num">2</span>
+        <h3>Demande-le dans le tchat</h3>
+        <p>Pendant le stream, tape <span class="cmd" data-cmd="demande">!FE_demande Nom</span>.
+          Ta demande rejoint la liste d'attente.</p></div>
+      <div class="etape"><span class="num">3</span>
+        <h3>Draanek valide</h3>
+        <p>Tu incarnes ce personnage <b>pour toute la partie</b>. Un seul viewer par personnage :
+          premier arrivé, premier servi.</p></div>
+      <div class="etape"><span class="num">4</span>
+        <h3>Mort définitive</h3>
+        <p>Si ton personnage tombe au combat, il est perdu pour de bon. Tu pourras alors
+          <b>rechoisir une seule fois</b> un personnage libre.</p></div>
+    </div>
+    <div class="commandes">
+      <span><span class="cmd" data-cmd="demande">!FE_demande Nom</span> <b>demander un personnage</b></span>
+      <span><span class="cmd" data-cmd="moi">!FE_moi</span> <b>ton personnage</b></span>
+      <span><span class="cmd" data-cmd="persos">!FE_persos</span> <b>personnages libres</b></span>
+      <span><span class="cmd" data-cmd="aide">!FE_aide</span> <b>rappel des règles</b></span>
+    </div>
+  </section>
+
+  <section aria-labelledby="titre-liste">
+    <h2 id="titre-liste">Les personnages</h2>
+    <div class="barre">
+      <div class="compteurs" id="compteurs">Chargement…</div>
+      <div class="filtres" role="group" aria-label="Afficher">
+        <button type="button" data-filtre="recrutes" aria-pressed="true">Recrutés</button>
+        <button type="button" data-filtre="libre" aria-pressed="false">Libre</button>
+        <button type="button" data-filtre="incarne" aria-pressed="false">Incarnés</button>
+        <button type="button" data-filtre="mort" aria-pressed="false">RIP</button>
+        <button type="button" data-filtre="tous" aria-pressed="false">Tous (attention spoil)</button>
+      </div>
+      <input class="recherche" id="recherche" type="search" placeholder="Rechercher un nom ou un viewer…"
+             aria-label="Rechercher">
+    </div>
+    <div class="grille" id="grille"></div>
+  </section>
+
+  <footer>
+    <span id="maj"></span> · La page se met à jour toute seule.<br>
+    Portraits : Fire Emblem: Fortune's Weave © Nintendo / Intelligent Systems.
+  </footer>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+  const etat = { donnees: null, filtre: "recrutes", recherche: "" };
+  const grille = document.getElementById("grille");
+  const sansAccents = s => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+
+  // ------------------------------------------------------------------ cartes
+  function vignette(nom, portrait, statutHtml, classes) {
+    const div = document.createElement("div");
+    div.className = "perso " + classes;
+    div.innerHTML =
+      '<div class="vignette"><div class="ombre"></div>' +
+      '<div class="cadre"><img loading="lazy" alt="" src="' + portrait + '"></div></div>' +
+      '<div class="nom"></div><div class="statut">' + statutHtml + "</div>";
+    div.querySelector(".nom").textContent = nom;
+    return div;
+  }
+
+  function toast(texte) {
+    const t = document.getElementById("toast");
+    t.textContent = texte;
+    t.classList.add("visible");
+    clearTimeout(toast.minuteur);
+    toast.minuteur = setTimeout(() => t.classList.remove("visible"), 2600);
+  }
+
+  async function copier(commande) {
+    try { await navigator.clipboard.writeText(commande); toast("Copié : " + commande + " · colle-le dans le tchat !"); }
+    catch (e) { toast("Tape dans le tchat : " + commande); }
+  }
+
+  function carte(p, prefixe) {
+    const pastille = {
+      libre: '<span class="pastille">Libre</span>',
+      incarne: '<span class="pastille">@' + p.viewer + "</span>",
+      mort: '<span class="pastille">RIP' + (p.viewer ? " · @" + p.viewer : "") + "</span>",
+      absent: '<span class="pastille">Pas encore recruté</span>'
+    }[p.statut];
+    const div = vignette(p.nom, p.portrait, pastille, p.statut);
+    if (p.statut === "libre") {
+      div.tabIndex = 0;
+      div.setAttribute("role", "button");
+      div.setAttribute("aria-label", "Copier la commande pour demander " + p.nom);
+      const action = () => copier(prefixe + "demande " + p.nom);
+      div.addEventListener("click", action);
+      div.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); action(); } });
+    }
+    return div;
+  }
+
+  const VIDE = {
+    recrutes: "Personne n'a encore rejoint l'équipe : la partie commence à peine !",
+    libre: "Aucun personnage disponible pour le moment : l'équipe s'agrandit au fil de la partie.",
+    incarne: "Personne n'a encore incarné de personnage. Sois le premier : onglet <b>Libre</b> !",
+    mort: "Aucun mort… pour l'instant.",
+    tous: "Aucun personnage ne correspond."
+  };
+  const ORDRE = { libre: 0, incarne: 1, mort: 2, absent: 3 };
+
+  function afficher() {
+    const d = etat.donnees;
+    if (!d) return;
+    const q = sansAccents(etat.recherche.trim());
+    const garder = {
+      recrutes: p => p.statut !== "absent",
+      libre: p => p.statut === "libre",
+      incarne: p => p.statut === "incarne",
+      mort: p => p.statut === "mort",
+      tous: p => true
+    }[etat.filtre];
+    const liste = d.personnages.filter(p => garder(p) &&
+      (!q || sansAccents(p.nom).includes(q) || (p.viewer && sansAccents(p.viewer).includes(q))));
+    // Dans « Recrutés », les persos disponibles passent en premier
+    if (etat.filtre === "recrutes") liste.sort((a, b) => ORDRE[a.statut] - ORDRE[b.statut]);
+    grille.replaceChildren(...liste.map(p => carte(p, d.prefixe)));
+    if (!liste.length) grille.innerHTML = '<div class="vide">' + (q ? VIDE.tous : VIDE[etat.filtre]) + "</div>";
+
+    const n = s => d.personnages.filter(p => p.statut === s).length;
+    document.getElementById("compteurs").innerHTML =
+      "<b>" + n("libre") + "</b> libres · <b>" + n("incarne") + "</b> incarnés · <b>" + n("mort") + "</b> tombés au combat";
+    const date = new Date(d.maj);
+    document.getElementById("maj").textContent = "Mis à jour le " +
+      date.toLocaleDateString("fr-FR", { day: "numeric", month: "long" }) + " à " +
+      date.toLocaleTimeString("fr-FR", { hour: "2-digit", minute: "2-digit" });
+  }
+
+  async function charger() {
+    try {
+      const r = await fetch("donnees.json?t=" + Date.now(), { cache: "no-store" });
+      etat.donnees = await r.json();
+      demo.prefixe = etat.donnees.prefixe;
+      document.querySelectorAll("[data-cmd]").forEach(el => {
+        const nom = el.dataset.cmd;
+        el.textContent = etat.donnees.prefixe + nom + (nom === "demande" ? " Nom" : "");
+      });
+      afficher();
+    } catch (e) {
+      document.getElementById("compteurs").textContent = "Impossible de charger la liste pour le moment.";
+    }
+  }
+
+  document.querySelectorAll("[data-filtre]").forEach(b => b.addEventListener("click", () => {
+    etat.filtre = b.dataset.filtre;
+    document.querySelectorAll("[data-filtre]").forEach(x => x.setAttribute("aria-pressed", x === b));
+    afficher();
+  }));
+  document.getElementById("recherche").addEventListener("input", e => { etat.recherche = e.target.value; afficher(); });
+
+  // ------------------------------------------------------------------ démo animée
+  // Choisir Leda, taper son nom, l'incarner ; elle tombe ; on rechoisit (une fois) Cai.
+  const demo = {
+    prefixe: "!FE_",
+    noms: ["Cai", "Dietrich", "Theodora", "Leda"],
+    cartes: {},
+    tape: document.getElementById("demo-tape"),
+    legende: document.getElementById("demo-legende"),
+    minuteurs: []
+  };
+  demo.noms.forEach(nom => {
+    const c = vignette(nom, "portraits/" + sansAccents(nom).replace(/[^a-z0-9_-]/g, "") + ".webp",
+                       '<span class="pastille">@Toi</span>', "");
+    demo.cartes[nom] = c;
+    document.getElementById("demo-persos").appendChild(c);
+  });
+
+  function plus_tard(ms, fn) { demo.minuteurs.push(setTimeout(fn, ms)); }
+  function legende(n, html) { demo.legende.innerHTML = '<span class="n">' + n + ".</span>" + html; }
+  function taper(texte, debut) {
+    plus_tard(debut - 1, () => { demo.tape.textContent = ""; });   // bulle vidée juste avant de taper
+    [...texte].forEach((lettre, i) => plus_tard(debut + i * 70, () => { demo.tape.textContent += lettre; }));
+    return debut + texte.length * 70;
+  }
+
+  function scenario() {
+    demo.minuteurs.forEach(clearTimeout); demo.minuteurs = [];
+    Object.values(demo.cartes).forEach(c => c.classList.remove("vise", "a-toi", "tombe"));
+    demo.tape.textContent = "";
+    const leda = demo.cartes.Leda, cai = demo.cartes.Cai;
+
+    legende(1, "Choisis un perso libre");
+    plus_tard(700, () => leda.classList.add("vise"));
+    plus_tard(2000, () => legende(2, "Tape son nom dans le tchat"));
+    let t = taper(demo.prefixe + "demande Leda", 2300);
+    plus_tard(t + 500, () => { leda.classList.remove("vise"); leda.classList.add("a-toi"); legende(3, "Tu l'incarnes pour toute la partie !"); });
+    plus_tard(t + 3000, () => { leda.classList.add("tombe"); legende(4, "Ton perso tombe au combat…"); });
+    plus_tard(t + 5400, () => { legende(5, "Tu peux rechoisir <em>une seule fois</em>"); cai.classList.add("vise"); });
+    const t2 = taper(demo.prefixe + "demande Cai", t + 6200);
+    plus_tard(t2 + 500, () => { cai.classList.remove("vise"); cai.classList.add("a-toi"); });
+    plus_tard(t2 + 4200, scenario);
+  }
+
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    // Sans animation : on montre directement le résultat
+    demo.cartes.Leda.classList.add("a-toi", "tombe"); demo.cartes.Cai.classList.add("a-toi");
+    demo.tape.textContent = "!FE_demande Cai";
+    legende("★", "Choisis, incarne… et si ton perso tombe, rechoisis <em>une seule fois</em>");
+  } else {
+    scenario();
+  }
+
+  charger();
+  setInterval(charger, 60000);
+</script>
+</body>
+</html>
