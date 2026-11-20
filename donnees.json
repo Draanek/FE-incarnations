@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-20T23:11:03+01:00",
+ "maj": "2026-11-20T23:11:22+01:00",
  "chaine": "draanek_tv",
  "prefixe": "!FE_",
  "badges_actifs": true,
@@ -55,7 +55,7 @@
   {
    "nom": "Cai",
    "portrait": "portraits/cai.webp",
-   "statut": "libre",
+   "statut": "absent",
    "viewer": null
   },
   {
