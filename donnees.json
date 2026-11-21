@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-21T16:36:46+01:00",
+ "maj": "2026-11-21T16:40:21+01:00",
  "chaine": "draanek_tv",
  "prefixe": "!FE_",
  "badges_actifs": true,
@@ -193,7 +193,7 @@
   {
    "nom": "Leda",
    "portrait": "portraits/leda.webp",
-   "statut": "mort",
+   "statut": "absent",
    "viewer": null
   },
   {
@@ -349,8 +349,8 @@
   {
    "nom": "Theodora",
    "portrait": "portraits/theodora.webp",
-   "statut": "incarne",
-   "viewer": "sarfael_"
+   "statut": "absent",
+   "viewer": null
   },
   {
    "nom": "Tialla",
@@ -395,16 +395,5 @@
    "viewer": null
   }
  ],
- "viewers": {
-  "sarfael_": {
-   "pseudo": "sarfael_",
-   "perso": "Theodora",
-   "mort": false,
-   "portrait": "portraits/theodora.webp",
-   "ancien": {
-    "perso": "Leda",
-    "portrait": "portraits/leda.webp"
-   }
-  }
- }
+ "viewers": {}
 }
