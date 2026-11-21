@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-21T16:30:26+01:00",
+ "maj": "2026-11-21T16:34:05+01:00",
  "chaine": "draanek_tv",
  "prefixe": "!FE_",
  "badges_actifs": true,
@@ -193,7 +193,7 @@
   {
    "nom": "Leda",
    "portrait": "portraits/leda.webp",
-   "statut": "incarne",
+   "statut": "mort",
    "viewer": "sarfael_"
   },
   {
@@ -399,7 +399,7 @@
   "sarfael_": {
    "pseudo": "sarfael_",
    "perso": "Leda",
-   "mort": false,
+   "mort": true,
    "portrait": "portraits/leda.webp"
   }
  }
