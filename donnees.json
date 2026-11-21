@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-21T01:11:32+01:00",
+ "maj": "2026-11-21T01:11:46+01:00",
  "chaine": "draanek_tv",
  "prefixe": "!FE_",
  "badges_actifs": true,
@@ -349,8 +349,8 @@
   {
    "nom": "Theodora",
    "portrait": "portraits/theodora.webp",
-   "statut": "libre",
-   "viewer": null
+   "statut": "incarne",
+   "viewer": "draanek_tv"
   },
   {
    "nom": "Tialla",
@@ -395,5 +395,12 @@
    "viewer": null
   }
  ],
- "viewers": {}
+ "viewers": {
+  "draanek_tv": {
+   "pseudo": "draanek_tv",
+   "perso": "Theodora",
+   "mort": false,
+   "portrait": "portraits/theodora.webp"
+  }
+ }
 }
