@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-21T20:39:27+01:00",
+ "maj": "2026-11-21T20:58:08+01:00",
  "chaine": "draanek_tv",
  "prefixe": "!FE_",
  "badges_actifs": true,
@@ -319,8 +319,8 @@
   {
    "nom": "Sirocco",
    "portrait": "portraits/sirocco.webp",
-   "statut": "libre",
-   "viewer": null
+   "statut": "incarne",
+   "viewer": "celine_bucky"
   },
   {
    "nom": "Smyrnos",
@@ -401,6 +401,12 @@
    "perso": "Mu",
    "mort": false,
    "portrait": "portraits/mu.webp"
+  },
+  "celine_bucky": {
+   "pseudo": "celine_bucky",
+   "perso": "Sirocco",
+   "mort": false,
+   "portrait": "portraits/sirocco.webp"
   }
  }
 }
