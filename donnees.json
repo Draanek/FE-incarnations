@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-21T20:34:05+01:00",
+ "maj": "2026-11-21T20:39:27+01:00",
  "chaine": "draanek_tv",
  "prefixe": "!FE_",
  "badges_actifs": true,
@@ -235,8 +235,8 @@
   {
    "nom": "Mu",
    "portrait": "portraits/mu.webp",
-   "statut": "libre",
-   "viewer": null
+   "statut": "incarne",
+   "viewer": "Luinil_lunelys"
   },
   {
    "nom": "Nathan",
@@ -395,5 +395,12 @@
    "viewer": null
   }
  ],
- "viewers": {}
+ "viewers": {
+  "luinil_lunelys": {
+   "pseudo": "Luinil_lunelys",
+   "perso": "Mu",
+   "mort": false,
+   "portrait": "portraits/mu.webp"
+  }
+ }
 }
