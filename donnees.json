@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-21T16:40:21+01:00",
+ "maj": "2026-11-21T20:34:01+01:00",
  "chaine": "draanek_tv",
  "prefixe": "!FE_",
  "badges_actifs": true,
@@ -235,7 +235,7 @@
   {
    "nom": "Mu",
    "portrait": "portraits/mu.webp",
-   "statut": "absent",
+   "statut": "libre",
    "viewer": null
   },
   {
@@ -319,7 +319,7 @@
   {
    "nom": "Sirocco",
    "portrait": "portraits/sirocco.webp",
-   "statut": "absent",
+   "statut": "libre",
    "viewer": null
   },
   {
