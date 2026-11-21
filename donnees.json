@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-21T16:27:57+01:00",
+ "maj": "2026-11-21T16:30:26+01:00",
  "chaine": "draanek_tv",
  "prefixe": "!FE_",
  "badges_actifs": true,
@@ -193,8 +193,8 @@
   {
    "nom": "Leda",
    "portrait": "portraits/leda.webp",
-   "statut": "libre",
-   "viewer": null
+   "statut": "incarne",
+   "viewer": "sarfael_"
   },
   {
    "nom": "Lilian",
@@ -395,5 +395,12 @@
    "viewer": null
   }
  ],
- "viewers": {}
+ "viewers": {
+  "sarfael_": {
+   "pseudo": "sarfael_",
+   "perso": "Leda",
+   "mort": false,
+   "portrait": "portraits/leda.webp"
+  }
+ }
 }
