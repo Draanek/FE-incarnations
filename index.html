@@ -432,10 +432,17 @@
       date.toLocaleTimeString("fr-FR", { hour: "2-digit", minute: "2-digit" });
   }
 
+  // Relue toutes les minutes ; la grille n'est redessinée que si les données
+  // ont changé, et rien n'est relu tant que l'onglet est caché.
+  let dernierTexte = "";
   async function charger() {
+    if (document.hidden) return;
     try {
       const r = await fetch("donnees.json?t=" + Date.now(), { cache: "no-store" });
-      etat.donnees = await r.json();
+      const texte = await r.text();
+      if (texte === dernierTexte) return;
+      etat.donnees = JSON.parse(texte);
+      dernierTexte = texte;
       demo.prefixe = etat.donnees.prefixe;
       document.querySelectorAll("[data-cmd]").forEach(el => {
         const nom = el.dataset.cmd;
@@ -508,6 +515,7 @@
 
   charger();
   setInterval(charger, 60000);
+  document.addEventListener("visibilitychange", () => { if (!document.hidden) charger(); });
 </script>
 </body>
 </html>
