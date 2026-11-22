@@ -1,8 +1,8 @@
 {
- "maj": "2026-11-21T20:58:08+01:00",
+ "maj": "2026-11-22T16:01:34+01:00",
  "chaine": "draanek_tv",
  "prefixe": "!FE_",
- "badges_actifs": true,
+ "badges_actifs": false,
  "personnages": [
   {
    "nom": "Alexandra",
