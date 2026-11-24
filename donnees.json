@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-24T21:56:18+01:00",
+ "maj": "2026-11-24T21:56:42+01:00",
  "chaine": "draanek_tv",
  "prefixe": "!FE_",
  "badges_actifs": true,
@@ -61,8 +61,8 @@
   {
    "nom": "Catania",
    "portrait": "portraits/catania.webp",
-   "statut": "libre",
-   "viewer": null
+   "statut": "incarne",
+   "viewer": "Josindar"
   },
   {
    "nom": "Centurio",
@@ -407,6 +407,12 @@
    "perso": "Sirocco",
    "mort": false,
    "portrait": "portraits/sirocco.webp"
+  },
+  "josindar": {
+   "pseudo": "Josindar",
+   "perso": "Catania",
+   "mort": false,
+   "portrait": "portraits/catania.webp"
   }
  }
 }
