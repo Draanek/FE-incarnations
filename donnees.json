@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-24T22:22:33+01:00",
+ "maj": "2026-11-24T22:39:08+01:00",
  "chaine": "draanek_tv",
  "prefixe": "!FE_",
  "badges_actifs": true,
@@ -49,8 +49,8 @@
   {
    "nom": "Buccar",
    "portrait": "portraits/buccar.webp",
-   "statut": "libre",
-   "viewer": null
+   "statut": "incarne",
+   "viewer": "Yoshiland24"
   },
   {
    "nom": "Cai",
@@ -419,6 +419,12 @@
    "perso": "Olympia",
    "mort": false,
    "portrait": "portraits/olympia.webp"
+  },
+  "yoshiland24": {
+   "pseudo": "Yoshiland24",
+   "perso": "Buccar",
+   "mort": false,
+   "portrait": "portraits/buccar.webp"
   }
  }
 }
