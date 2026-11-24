@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-24T19:35:05+01:00",
+ "maj": "2026-11-24T21:56:18+01:00",
  "chaine": "draanek_tv",
  "prefixe": "!FE_",
  "badges_actifs": true,
@@ -61,7 +61,7 @@
   {
    "nom": "Catania",
    "portrait": "portraits/catania.webp",
-   "statut": "absent",
+   "statut": "libre",
    "viewer": null
   },
   {
