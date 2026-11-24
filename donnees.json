@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-22T16:03:44+01:00",
+ "maj": "2026-11-24T19:35:05+01:00",
  "chaine": "draanek_tv",
  "prefixe": "!FE_",
  "badges_actifs": true,
@@ -277,7 +277,7 @@
   {
    "nom": "Olympia",
    "portrait": "portraits/olympia.webp",
-   "statut": "absent",
+   "statut": "libre",
    "viewer": null
   },
   {
