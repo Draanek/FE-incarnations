@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-24T21:56:42+01:00",
+ "maj": "2026-11-24T22:22:33+01:00",
  "chaine": "draanek_tv",
  "prefixe": "!FE_",
  "badges_actifs": true,
@@ -277,8 +277,8 @@
   {
    "nom": "Olympia",
    "portrait": "portraits/olympia.webp",
-   "statut": "libre",
-   "viewer": null
+   "statut": "incarne",
+   "viewer": "Hresvelg_Endless"
   },
   {
    "nom": "Orchel",
@@ -413,6 +413,12 @@
    "perso": "Catania",
    "mort": false,
    "portrait": "portraits/catania.webp"
+  },
+  "hresvelg_endless": {
+   "pseudo": "Hresvelg_Endless",
+   "perso": "Olympia",
+   "mort": false,
+   "portrait": "portraits/olympia.webp"
   }
  }
 }
