@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-24T22:39:08+01:00",
+ "maj": "2026-11-26T21:16:46+01:00",
  "chaine": "draanek_tv",
  "prefixe": "!FE_",
  "badges_actifs": true,
@@ -163,7 +163,7 @@
   {
    "nom": "Jasmine",
    "portrait": "portraits/jasmine.webp",
-   "statut": "absent",
+   "statut": "libre",
    "viewer": null
   },
   {
