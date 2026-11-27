@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-27T20:51:39+01:00",
+ "maj": "2026-11-27T21:16:10+01:00",
  "chaine": "draanek_tv",
  "prefixe": "!FE_",
  "badges_actifs": true,
@@ -115,7 +115,7 @@
   {
    "nom": "Fianna",
    "portrait": "portraits/fianna.webp",
-   "statut": "absent",
+   "statut": "libre",
    "viewer": null
   },
   {
