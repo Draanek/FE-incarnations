@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-27T18:17:47+01:00",
+ "maj": "2026-11-27T18:24:22+01:00",
  "chaine": "draanek_tv",
  "prefixe": "!FE_",
  "badges_actifs": true,
@@ -157,7 +157,7 @@
   {
    "nom": "Io",
    "portrait": "portraits/io.webp",
-   "statut": "absent",
+   "statut": "libre",
    "viewer": null
   },
   {
