@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-27T18:24:22+01:00",
+ "maj": "2026-11-27T18:26:19+01:00",
  "chaine": "draanek_tv",
  "prefixe": "!FE_",
  "badges_actifs": true,
@@ -157,8 +157,8 @@
   {
    "nom": "Io",
    "portrait": "portraits/io.webp",
-   "statut": "libre",
-   "viewer": null
+   "statut": "incarne",
+   "viewer": "Mymyl"
   },
   {
    "nom": "Jasmine",
@@ -229,8 +229,8 @@
   {
    "nom": "Mikaela",
    "portrait": "portraits/mikaela.webp",
-   "statut": "libre",
-   "viewer": null
+   "statut": "incarne",
+   "viewer": "darkmika04"
   },
   {
    "nom": "Mu",
@@ -425,6 +425,18 @@
    "perso": "Buccar",
    "mort": false,
    "portrait": "portraits/buccar.webp"
+  },
+  "mymyl": {
+   "pseudo": "Mymyl",
+   "perso": "Io",
+   "mort": false,
+   "portrait": "portraits/io.webp"
+  },
+  "darkmika04": {
+   "pseudo": "darkmika04",
+   "perso": "Mikaela",
+   "mort": false,
+   "portrait": "portraits/mikaela.webp"
   }
  }
 }
