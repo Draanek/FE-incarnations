@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-26T21:16:46+01:00",
+ "maj": "2026-11-27T18:17:47+01:00",
  "chaine": "draanek_tv",
  "prefixe": "!FE_",
  "badges_actifs": true,
@@ -229,7 +229,7 @@
   {
    "nom": "Mikaela",
    "portrait": "portraits/mikaela.webp",
-   "statut": "absent",
+   "statut": "libre",
    "viewer": null
   },
   {
