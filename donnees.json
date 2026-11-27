@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-27T18:26:19+01:00",
+ "maj": "2026-11-27T20:51:39+01:00",
  "chaine": "draanek_tv",
  "prefixe": "!FE_",
  "badges_actifs": true,
@@ -163,8 +163,8 @@
   {
    "nom": "Jasmine",
    "portrait": "portraits/jasmine.webp",
-   "statut": "libre",
-   "viewer": null
+   "statut": "incarne",
+   "viewer": "Papy_Canette"
   },
   {
    "nom": "Jester",
@@ -437,6 +437,12 @@
    "perso": "Mikaela",
    "mort": false,
    "portrait": "portraits/mikaela.webp"
+  },
+  "papy_canette": {
+   "pseudo": "Papy_Canette",
+   "perso": "Jasmine",
+   "mort": false,
+   "portrait": "portraits/jasmine.webp"
   }
  }
 }
